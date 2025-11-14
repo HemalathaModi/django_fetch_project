@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <table border="10px" , cellspacing="0" , cellpadding="10px">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for us in userdata %}
+                <tr>
+                    <td>{{us.name}}</td>
+                    <td>{{us.email}}</td>
+                    <td>{{us.phone}}</td>
+                    <td>{{us.address}}</td>
+                    <td>{{us.age}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </center>
+</body>
+
+</html>
