@@ -149,7 +149,7 @@ STATIC_URL = '/static/'
 
 # Extra directories to look for static files
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    # os.path.join(BASE_DIR, 'static'),
 ]
 
 # Folder where collectstatic will gather all static files
